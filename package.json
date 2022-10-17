@@ -1,12 +1,11 @@
 {
   "name": "system-monitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Windows Widget that monitors your CPU and GPU",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder --publish",
-    "publish": "electron-forge publish"
+    "build": "electron-builder --win --publish always"
   },
   "author": "VaffanClash",
   "license": "ISC",
@@ -21,9 +20,11 @@
   "build": {
     "appId": "System Monitor",
     "win": {
-      "publish": [
-        "github"
-      ],
+      "publish": [{
+        "provider": "github",
+             "owner": "vaffanclash",
+             "repo": "resource-monitor"
+      }],
       "target": [
         "nsis"
       ],
