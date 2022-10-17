@@ -2,9 +2,10 @@ const systemInfo = require('systeminformation');
 
 /* -------------------------------------------- */
 const CPUTemp = document.querySelector('#cpu_temp');
+const CPUUsage = document.querySelector('#cpu_usage');
 const GPUTemp = document.querySelector('#gpu_temp');
-const GPUFan = document.querySelector('#gpu_fan');
 const GPUUsage = document.querySelector('#gpu_usage');
+const GPUFan = document.querySelector('#gpu_fan');
 
 systemInfo.powerShellStart();
 
@@ -27,6 +28,15 @@ const updateCpuTemp = () => {
     // setTimeout(updateCpuTemp, 1000);
 }
 updateCpuTemp();
+
+const updateCpuUsage = () => {
+  systemInfo.currentLoad().then((tmp) => {
+    CPUUsage.textContent = Math.trunc(tmp.currentLoad) + '%';
+    console.log(tmp);
+  });
+  // setTimeout(updateCpuTemp, 1000);
+}
+updateCpuUsage();
 
 // systemInfo.powerShellRelease();
 
