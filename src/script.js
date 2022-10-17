@@ -1,5 +1,4 @@
 const systemInfo = require('systeminformation');
-// const { autoUpdater } = require("electron-updater");
 
 /* -------------------------------------------- */
 const CPUTemp = document.querySelector('#cpu_temp');
@@ -9,8 +8,6 @@ const GPUUsage = document.querySelector('#gpu_usage');
 const GPUFan = document.querySelector('#gpu_fan');
 
 systemInfo.powerShellStart();
-
-// autoUpdater.checkForUpdatesAndNotify();
 
 const updateGpuTemp = () => {
   systemInfo.graphics().then((tmp) => {
