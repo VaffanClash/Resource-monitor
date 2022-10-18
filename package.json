@@ -1,6 +1,6 @@
 {
   "name": "system-monitor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Windows Widget that monitors your CPU and GPU",
   "main": "main.js",
   "scripts": {
