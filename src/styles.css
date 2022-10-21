@@ -4,6 +4,11 @@
     /* background-color: #1b1b1b; */
     color: black;
     font-family: arial, serif;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 /**--------------------------------------------

@@ -9,8 +9,6 @@ const GPUFan = document.querySelector('#gpu_fan');
 
 systemInfo.powerShellStart();
 
-console.log('If you see this, the auto updater works!');
-
 const updateGpuTemp = () => {
   systemInfo.graphics().then((tmp) => {
     GPUTemp.textContent = tmp.controllers[0].temperatureGpu + '°';
@@ -34,9 +32,9 @@ updateCpuTemp();
 const updateCpuUsage = () => {
   systemInfo.currentLoad().then((tmp) => {
     CPUUsage.textContent = Math.trunc(tmp.currentLoad) + '%';
-    console.log(tmp);
+    // console.log(tmp);
   });
-  // setTimeout(updateCpuTemp, 1000);
+  setTimeout(updateCpuUsage, 1000);
 }
 updateCpuUsage();
 

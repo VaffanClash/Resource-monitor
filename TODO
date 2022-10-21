@@ -1,0 +1,8 @@
+Todo:
+  ✔ Save window position and use it on next startup @done(22-10-20 14:52)
+  ☐ Completely refactor code with a class
+  ☐ Add personalization window
+  ☐ Add guards to prevent any unexpected "undefined" passed to the DOM
+
+Problems:
+  ✔ Size not using the default settings @done(22-10-20 22:52)
