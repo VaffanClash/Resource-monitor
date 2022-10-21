@@ -5,6 +5,7 @@
 What you can monitor at the moment:
 
 - CPU Temperature (not working at the moment)
+- CPU Usage
 - GPU Temperature
 - GPU Usage
 - GPU Fan
