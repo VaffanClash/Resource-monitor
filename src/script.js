@@ -4,6 +4,9 @@ const systemInfo = require('systeminformation');
 const fs = require('fs');
 const path = require('path');
 
+// temporary
+const version = '1.1.0';
+
 /* -------------------------------------------- */
 const settingsBtn = document.querySelector('#settingsBtn');
 
