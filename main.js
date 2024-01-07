@@ -3,6 +3,9 @@ const path = require('path');
 
 const windowStateKeeper = require('electron-window-state');
 
+const { autoUpdater } = require("electron-updater");
+autoUpdater.checkForUpdatesAndNotify();
+
 let mainWindow;
 let secondWindow; // New window for the second page
 
