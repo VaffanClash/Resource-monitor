@@ -11,6 +11,33 @@
     display: none;
 }
 
+#settingsBtn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    background-image: url('./img/gearIcon.png');
+    background-size: cover;
+
+    bottom: 1px;
+
+    background-color: transparent;
+
+    border: none;
+    margin: 2px;
+    padding: 0;
+
+    z-index: 1;
+    -webkit-app-region: no-drag;
+}
+
+#gearIcon {
+    /* position: absolute; */
+    width: 20px;
+    /* bottom: 1px; */
+    /* margin: 2px; */
+}
+
 /**--------------------------------------------
  *                     SPECS
  *---------------------------------------------**/  
@@ -24,6 +51,10 @@
     border: 3px solid black;
     border-radius: 6px;
 }
+
+/* .container #settingsBtn {
+    -webkit-app-region: no-drag;
+} */
 
 .temp {
     position: absolute;

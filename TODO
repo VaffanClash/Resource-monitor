@@ -2,7 +2,12 @@ Todo:
   ✔ Save window position and use it on next startup @done(22-10-20 14:52)
   ☐ Completely refactor code with a class
   ☐ Add personalization window
-  ☐ Add guards to prevent any unexpected "undefined" passed to the DOM
+  ✔ Add guards to prevent any unexpected "undefined/NaN" passed to the DOM @done(24-01-05 18:20)
+  ✔ Use readFileSync to read settings @done(23-12-27 22:22)
+  ☐ Check if secondWindow is already open before opening another
 
 Problems:
   ✔ Size not using the default settings @done(22-10-20 22:52)
+
+Security:
+  ☐ Avoid requires and enable security

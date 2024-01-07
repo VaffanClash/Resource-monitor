@@ -6,10 +6,14 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
     <link href="./styles.css" rel="stylesheet">
     <title>System Monitor</title>
+
     <script defer src="script.js"></script>
+
+    <webview src="your_renderer.html" preload="./path/to/renderer.js"></webview>
   </head>
   <body>
     <div class="container">
+    <button id="settingsBtn"></button>
       <p class="temp" id="cpu_temp">temp</p>
       <p class="component">CPU</p>
     </div>
@@ -25,7 +29,7 @@
     </div>
 
     <div class="container">
-      <p class="temp" id="gpu_usage">fan</p>
+      <p class="temp" id="gpu_usage">usage</p>
       <p class="component">GPU usage</p>
     </div>
 
